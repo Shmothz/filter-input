@@ -1,0 +1,10 @@
+.right-up-wrap {
+    min-height: 200px;
+    width: 420px;
+    border-radius: 8px;
+    background-color: #90c300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,10 @@
+.left-down-wrap {
+    background-color: #00b4f1;
+    min-height: 200px;
+    width: 420px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

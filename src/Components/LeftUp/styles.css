@@ -1,0 +1,15 @@
+.wrap-left-up {
+    min-height: 200px;
+    width: 420px;
+    border-radius: 8px;
+    background-color: #f8682d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+
+}
+.button {
+
+}

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {LeftUp} from "./Components/LeftUp"
+import {RightUp} from "./Components/RightUp/RightUp"
+import {LeftDown} from "./Components/LeftDown"
+import {RightDown} from "./Components/RightDown"
+import './App.css'
+import $store from "./effector/effector";
+import {useStore} from "effector-react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+ const data = useStore($store)
+
+ return (
+  <div className='app-wrapper'>
+   <LeftUp/>
+   <RightUp data={data}/>
+   <LeftDown data={data}/>
+   <RightDown data={data}/>
+  </div>
+ );
 }
 
-export default App;
+export default App
