@@ -9,7 +9,7 @@ export const LeftUp = () => {
  const onChange = e => setValue(e.target.value)
 
  const onClick = () => {
-  if (value.match(/^[a-zA-Zа-яА-Я]+$/)) {
+  if (value.match(/^[a-zA-Zа-яА-ЯёЁ]+$/)) {
    addWord({value, counter: 1})
   } else {
    if (value.match(/^\d+$/)) {
